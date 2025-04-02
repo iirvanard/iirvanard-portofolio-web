@@ -34,7 +34,7 @@ export default function AboutPage() {
   };
 
   return (
-    <div className="flex flex-col bg-gray-950 text-gray-100">
+    <div className="min-h-screen flex flex-col bg-gray-950 text-gray-100">
       {/* Hero Section */}
       <header className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white py-16 md:py-24 lg:py-32 px-4 sm:px-6 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-0" />
