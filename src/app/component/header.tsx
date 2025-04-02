@@ -21,10 +21,13 @@ const Header = ({ locale }: { locale: string }) => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    // Toggle body overflow when menu is open
+    document.body.style.overflow = isMenuOpen ? 'auto' : 'hidden';
   };
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+    document.body.style.overflow = 'auto';
   };
 
   const t = useTranslations("NavbarLinks");
@@ -42,14 +45,14 @@ const Header = ({ locale }: { locale: string }) => {
   };
 
   return (
-<header className={`w-auto z-50 transition-all fixed top-0 left-0 right-0 ${isScrolled ? 'bg-gray-950/90 backdrop-blur-md border-b border-gray-800' : 'bg-gray-950/80 backdrop-blur-sm'}`}>
-<div className="mx-auto px-4 sm:px-6 lg:px-8">
+    <header className={`fixed top-0 left-0 right-0 z-50 w-full ${isScrolled ? 'bg-gray-950/90 backdrop-blur-md border-b border-gray-800' : 'bg-gray-950/80 backdrop-blur-sm'}`}>
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-[100vw] overflow-x-hidden">
         {/* Main Navigation Container */}
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo Section */}
           <div className="flex-shrink-0 flex items-center">
             <Link href={`/${locale}`} className="flex items-center group">
-              <PixelatedKoala  />
+              <PixelatedKoala />
               <span className="ml-3 text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300">
                 IIRVANARD
               </span>
@@ -120,7 +123,7 @@ const Header = ({ locale }: { locale: string }) => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+      <div className={`md:hidden fixed top-16 left-0 right-0 bg-gray-950/95 backdrop-blur-lg transition-all duration-300 ease-in-out overflow-hidden ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
         <div className="px-4 pt-2 pb-6 space-y-1 border-t border-gray-800">
           <Link
             href={`/${locale}`}

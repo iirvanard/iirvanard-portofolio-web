@@ -5,11 +5,11 @@ import Footer from "@/app/component/footer";
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
- // Terapkan VT323 font dengan weight yang diperlukan (misalnya 400)
+
 const vt323 = VT323({
   variable: "--font-vt323",
   subsets: ["latin"],
-  weight: "400", // Menambahkan properti weight
+  weight: "400",
 });
 
 export default async function LocaleLayout({
@@ -19,21 +19,21 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{locale: string}>;
 }) {
-  // Ensure that the incoming `locale` is valid
   const {locale} = await params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
  
   return (
-    <html lang={locale}>
-      <body className={`${vt323.variable} antialiased`}>
-      <NextIntlClientProvider>   
-
-      <Header locale={locale} />
-      {children}
-      <Footer locale={locale} />
-      </NextIntlClientProvider>
+    <html lang={locale} className="scroll-smooth">
+      <body className={`${vt323.variable} antialiased bg-gray-950 text-gray-100 min-h-screen w-full max-w-[100vw] overflow-x-hidden`}>
+        <NextIntlClientProvider>   
+          <Header locale={locale} />
+          <main className="pt-16 md:pt-20"> {/* Adjust based on your header height */}
+            {children}
+          </main>
+          <Footer locale={locale} />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
