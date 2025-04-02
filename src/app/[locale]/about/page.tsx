@@ -38,7 +38,6 @@ export default function AboutPage() {
       {/* Hero Section with floating elements */}
       <header className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white py-20 md:py-36 px-4 md:px-6 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-0" />
-        <div className="absolute inset-0 opacity-10 bg-[url('/grid-pattern.svg')] bg-cover" />
         
         {/* Floating abstract shapes */}
         <div className="absolute top-20 right-20 w-40 h-40 rounded-full bg-blue-500/10 blur-xl"></div>
@@ -195,7 +194,6 @@ export default function AboutPage() {
 
       {/* Call to Action with illustration */}
       <section className="relative py-20 md:py-32 px-4 sm:px-6 bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] bg-cover opacity-5" />
         {/* Floating shapes */}
         <div className="absolute top-1/3 left-1/4 w-16 h-16 bg-blue-400/10 rounded-full blur-lg"></div>
         <div className="absolute bottom-1/4 right-1/3 w-24 h-24 bg-cyan-400/10 rounded-lg rotate-45 blur-xl"></div>
