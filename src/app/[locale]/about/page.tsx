@@ -10,9 +10,67 @@ export default function AboutPage() {
     console.log('Contact button clicked!');
   };
 
+
+  const skills = {
+    frontend: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+    backend: ['Node.js', 'Python', 'Express', 'GraphQL'],
+    devops: ['Docker', 'AWS', 'CI/CD', 'Kubernetes'],
+    other: ['Git', 'Agile', 'Figma', 'Jira']
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-950 text-gray-100">
-    
+      {/* Hero Section */}
+
+
+      {/* About Me Section */}
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 bg-gray-900/50 relative">
+        <div className="absolute -bottom-10 -right-10 w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 bg-blue-500/5 rounded-full blur-3xl"></div>
+        
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
+            <div>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-white">
+                {t('aboutTitle')}
+              </h2>
+              <div className="space-y-4 sm:space-y-6 text-gray-400 relative">
+                <div className="absolute -top-4 -left-4 w-12 h-12 md:-top-6 md:-left-6 md:w-16 md:h-16 bg-blue-500/10 rounded-full blur-lg"></div>
+                <div className="space-y-3 sm:space-y-4">
+                  {t.raw("aboutParagraph").map((paragraph: string, index: number) => (
+                    <p key={index} className="text-sm sm:text-base md:text-lg text-justify">
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="bg-gray-800 rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-gray-700 hover:border-blue-500/30 transition-all duration-300 shadow-lg hover:shadow-xl relative overflow-hidden">
+              <div className="absolute -right-6 -top-6 h-16 w-16 md:-right-10 md:-top-10 md:h-24 md:w-24 bg-blue-500/10 rounded-full"></div>
+              <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-white relative z-10">
+                {t('skillsTitle')}
+              </h3>
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 relative z-10">
+                {Object.entries(skills).map(([category, items]) => (
+                  <div key={category}>
+                    <h4 className="text-blue-400 font-medium mb-2 sm:mb-3 text-sm sm:text-base">
+                      {t(`${category}Skills`)}
+                    </h4>
+                    <ul className="space-y-1 sm:space-y-2">
+                      {items.map(skill => (
+                        <li key={skill} className="flex items-center">
+                          <span className="h-1.5 w-1.5 sm:h-2 sm:w-2 bg-blue-500 rounded-full mr-2"></span>
+                          <span className="text-xs sm:text-sm md:text-base">{skill}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Call to Action */}
       <section className="relative py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6 bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
