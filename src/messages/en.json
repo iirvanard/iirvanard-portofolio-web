@@ -1,0 +1,122 @@
+{
+    "NavbarLinks": {
+      "home": "Home",
+      "about": "About Me",
+      "blog": "Blog"
+    },
+    
+    "Footer": {
+      "Title": "Creating exceptional digital experiences with cutting-edge technology and user-focused design.",
+      "navigation": "Navigation",
+      "resources": "Resources",
+      "Newsletter": {
+        "Heading": "Stay Updated",
+        "Description": "Subscribe to my newsletter for the latest updates.",
+        "EmailPlaceholder": "Your email address",
+        "ButtonText": "Subscribe"
+      },
+      "Copyright": "© 2023 Iirvanard. All rights reserved.",
+      "PrivacyPolicy": "Privacy Policy",
+      "TermsOfService": "Terms of Service",
+      "Cookies": "Cookies Policy"
+    },
+    
+    "HomePage": {
+      "title": "Innovative Digital Solutions",
+      "heroSubtitle": "Creating exceptional digital experiences with cutting-edge technology and user-focused design.",
+      "exploreProjects": "Explore Projects",
+      "contactMe": "Contact Me",
+      "projectsTitle": "Featured Projects",
+      "projectsSubtitle": "Each project represents a unique challenge solved with innovative thinking and technical excellence.",
+      "viewCaseStudy": "View Case Study",
+      "expertiseTitleWithHighlight": "My <highlight>Expertise</highlight>",
+      "expertiseSubtitle": "I specialize in modern web technologies across the full development stack.",
+      "ctaTitleWithHighlight": "Ready to Bring Your <highlight>Vision</highlight> to Life?",
+      "ctaSubtitle": "Whether you need a complete solution or technical expertise for your project, I’d love to hear from you.",
+      "scheduleCall": "Schedule a Call",
+      "emailMe": "Email Me",
+      "projects": [
+        {
+          "title": "Platform E-Commerce",
+          "description": "Full-stack e-commerce solution with payment integration and inventory management.",
+          "technologies":[
+            "React",
+            "Node.js",
+            "MongoDB",
+            "Stripe"
+          ]
+        },
+        {
+          "title": "Health Dashboard",
+          "description": "Real-time analytics dashboard for healthcare professionals.",
+          "technologies":[
+            "React",
+            "Node.js",
+            "MongoDB",
+            "Chart.js"
+          ]
+        },
+        {
+          "title": "Social Media App",
+          "description": "Full-stack social media app with user authentication and real-time messaging.",
+          "technologies":[
+            "React",
+            "Node.js",
+            "MongoDB",
+            "Socket.io"
+          ]
+        }
+      ]
+    },
+    "AboutPage": {
+      "title": "About Me",
+      "heroSubtitle": "Experienced software developer passionate about creating meaningful digital solutions.",
+      "viewResume": "View Resume",
+      "contactMe": "Contact Me",
+      "aboutTitle": "About Me",
+      "aboutParagraph": [
+        "I am a software developer with over 5 years of experience building modern web applications. I specialize in JavaScript, TypeScript, and the React ecosystem.",
+        "My approach combines analytical thinking with creativity to deliver solutions that are not only technically efficient but also provide an exceptional user experience.",
+        "Outside of coding, I enjoy contributing to open-source projects, writing technical articles, and continually learning new technologies."
+      ],
+      "skillsTitle": "Skills & Expertise",
+      "frontendSkills": "Frontend",
+      "backendSkills": "Backend",
+      "devopsSkills": "DevOps",
+      "otherSkills": "Other",
+      "experienceTitleWithHighlight": "Professional <highlight>Experience</highlight>",
+      "experienceSubtitle": "My career journey and challenging projects I have worked on",
+      "educationTitle": "Education",
+      "educationSubtitle": "My academic background and professional certifications",
+      "ctaTitleWithHighlight": "Interested in Working <highlight>Together?</highlight>",
+      "ctaSubtitle": "I’m always open to new opportunities and exciting collaborations. Let’s talk about your project!",
+      "scheduleCall": "Schedule a Call",
+      "emailMe": "Email Me",
+      "experiences": [
+        {
+          "role": "Lead Software Engineer",
+          "company": "Tech Solutions Inc.",
+          "period": "2021 - Present",
+          "description": "Led a development team to build a SaaS platform serving over 10,000 active users."
+        }
+      ],
+      "education": [
+        {
+          "degree": "Master of Information Technology",
+          "institution": "Bandung Institute of Technology",
+          "period": "2017 - 2019",
+          "description": "Specialized in cloud computing and big data analytics."
+        },
+        {
+          "degree": "Master of Information Technology",
+          "institution": "Bandung Institute of Technology",
+          "period": "2017 - 2019",
+          "description": "Specialized in cloud computing and big data analytics."
+        }
+      ]
+    },
+    "BlogPage": {
+      "title": "Blog Page"
+    }
+  }
+  

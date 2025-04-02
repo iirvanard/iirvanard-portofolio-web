@@ -1,0 +1,122 @@
+{
+  "NavbarLinks": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "blog": "Blog"
+  },
+  
+  "Footer": {
+    "Title": "Menciptakan pengalaman digital luar biasa dengan teknologi mutakhir dan desain yang berfokus pada pengguna.",
+    "navigation": "Navigasi",
+    "resources": "Sumber Daya",
+    "Newsletter": {
+      "Heading": "Tetap Terupdate",
+      "Description": "Langganan newsletter saya untuk pembaruan terbaru.",
+      "EmailPlaceholder": "Alamat email Anda",
+      "ButtonText": "Langganan"
+    },
+    "Copyright": "© 2023 Iirvanard. Semua hak dilindungi undang-undang.",
+    "PrivacyPolicy": "Kebijakan Privasi",
+    "TermsOfService": "Syarat dan Ketentuan",
+    "Cookies": "Kebijakan Cookies"
+  },
+  
+  "HomePage": {
+    "title": "Solusi Digital Inovatif",
+    "heroSubtitle": "Menciptakan pengalaman digital luar biasa dengan teknologi mutakhir dan desain yang berfokus pada pengguna.",
+    "exploreProjects": "Jelajahi Proyek",
+    "contactMe": "Hubungi Saya",
+    "projectsTitle": "Proyek Unggulan",
+    "projectsSubtitle": "Setiap proyek merupakan tantangan unik yang dipecahkan dengan pemikiran inovatif dan keunggulan teknis.",
+    "viewCaseStudy": "Lihat Studi Kasus",
+    "expertiseTitleWithHighlight": "Keahlian <highlight>Saya</highlight>",
+    "expertiseSubtitle": "Saya mengkhususkan diri dalam teknologi web modern di seluruh tumpukan pengembangan.",
+    "ctaTitleWithHighlight": "Siap Membawa <highlight>Visi</highlight> Anda ke Kehidupan?",
+    "ctaSubtitle": "Apakah Anda membutuhkan solusi lengkap atau keahlian teknis untuk proyek Anda, saya siap mendengarkan Anda.",
+    "scheduleCall": "Jadwalkan Panggilan",
+    "emailMe": "Email Saya",
+  "projects": [
+  {
+    "title": "Platform E-Commerce",
+    "description": "Solusi e-commerce full-stack dengan integrasi pembayaran dan manajemen inventaris.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Stripe"
+    ]
+  },
+  {
+    "title": "Dasbor Kesehatan",
+    "description": "Dasbor analitik real-time untuk profesional kesehatan.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Chart.js"
+    ]
+  },
+  {
+    "title": "Aplikasi Media Sosial",
+    "description": "Aplikasi media sosial full-stack dengan autentikasi pengguna dan pesan real-time.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Socket.io"
+    ]
+  }
+]
+
+  },
+  "AboutPage": {
+    "title": "Tentang Saya",
+    "heroSubtitle": "Pengembang perangkat lunak berpengalaman yang bersemangat menciptakan solusi digital yang bermakna.",
+    "viewResume": "Lihat Resume",
+    "contactMe": "Hubungi Saya",
+    "aboutTitle": "Tentang Saya",
+    "aboutParagraph": [
+      "Saya adalah pengembang perangkat lunak dengan lebih dari 5 tahun pengalaman membangun aplikasi web modern. Saya mengkhususkan diri dalam JavaScript, TypeScript, dan ekosistem React.",
+      "Pendekatan saya menggabungkan pemikiran analitis dengan kreativitas untuk menghasilkan solusi yang tidak hanya efisien secara teknis tetapi juga memberikan pengalaman pengguna yang luar biasa.",
+      "Di luar pengkodean, saya menikmati berkontribusi pada proyek open-source, menulis artikel teknis, dan terus belajar teknologi baru."
+    ],
+    "skillsTitle": "Keahlian & Pengalaman",
+    "frontendSkills": "Frontend",
+    "backendSkills": "Backend",
+    "devopsSkills": "DevOps",
+    "otherSkills": "Lainnya",
+    "experienceTitleWithHighlight": "Pengalaman <highlight>Profesional</highlight>",
+    "experienceSubtitle": "Perjalanan karir saya dan proyek-proyek menantang yang telah saya kerjakan",
+    "educationTitle": "Pendidikan",
+    "educationSubtitle": "Latar belakang akademik dan sertifikasi profesional saya",
+    "ctaTitleWithHighlight": "Tertarik untuk Bekerja <highlight>Bersama?</highlight>",
+    "ctaSubtitle": "Saya selalu terbuka untuk peluang baru dan kolaborasi yang menarik. Mari bicarakan proyek Anda!",
+    "scheduleCall": "Jadwalkan Panggilan",
+    "emailMe": "Email Saya",
+    "experiences": [
+      {
+        "role": "Lead Software Engineer",
+        "company": "Tech Solutions Inc.",
+        "period": "2021 - Sekarang",
+        "description": "Memimpin tim pengembangan untuk membangun platform SaaS yang melayani lebih dari 10.000 pengguna aktif."
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master Teknologi Informasi",
+        "institution": "Institut Teknologi Bandung",
+        "period": "2017 - 2019",
+        "description": "Spesialisasi dalam komputasi awan dan analitik data besar."
+      },
+      {
+        "degree": "Master Teknologi Informasi",
+        "institution": "Institut Teknologi Bandung",
+        "period": "2017 - 2019",
+        "description": "Spesialisasi dalam komputasi awan dan analitik data besar."
+      }
+    ]
+  },
+  "BlogPage": {
+    "title": "Halaman Blog"
+  }
+}
